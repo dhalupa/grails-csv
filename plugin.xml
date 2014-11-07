@@ -1,4 +1,4 @@
-<plugin name='csv' version='0.3-PK' grailsVersion='1.2 &gt; *'>
+<plugin name='csv' version='0.3-ABZ' grailsVersion='1.2 &gt; *'>
   <author>Les Hazlewood</author>
   <authorEmail>les@katasoft.com</authorEmail>
   <title>Grails CSV Plugin</title>
@@ -61,12 +61,21 @@
 
     </description>
   <documentation>http://grails.org/plugin/csv</documentation>
+  <type>CsvGrailsPlugin</type>
   <resources>
-    <resource>BuildConfig</resource>
-    <resource>DataSource</resource>
-    <resource>UrlMappings</resource>
     <resource>CsvTestController</resource>
   </resources>
-  <dependencies />
+  <repositories>
+    <repository name='grailsCentral' url='http://grails.org/plugins' />
+    <repository name='http://repo.grails.org/grails/core' url='http://repo.grails.org/grails/core/' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+  </repositories>
+  <dependencies>
+    <compile>
+      <dependency group='net.sf.opencsv' name='opencsv' version='2.3' />
+    </compile>
+  </dependencies>
+  <plugins />
+  <runtimePluginRequirements />
   <behavior />
 </plugin>
