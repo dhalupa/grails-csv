@@ -23,7 +23,7 @@ import org.grails.plugins.csv.controller.RenderCsvMethod
 
 class CsvGrailsPlugin {
     // the plugin version
-    def version = "0.3-PK"
+    def version = "0.3-ABZ"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.2 > *"
     // the other plugins this plugin depends on
