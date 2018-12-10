@@ -1,4 +1,4 @@
-package csv
+package org.grails.plugins.csv
 
 import au.com.bytecode.opencsv.CSVReader
 import grails.plugins.*
