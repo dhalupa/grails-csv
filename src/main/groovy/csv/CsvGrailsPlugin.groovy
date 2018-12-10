@@ -134,7 +134,7 @@ class CsvGrailsPlugin extends Plugin {
             return new CSVMapReader(new StringReader(delegate),settingsMap)
         }
 
-        application.controllerClasses.each {
+        grailsApplication.controllerClasses.each {
             it.clazz.metaClass.renderCsv = renderCsvMethod
         }
     }
