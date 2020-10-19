@@ -87,3 +87,6 @@ publishing {
         }
     }
 }
+
+wrapper { gradleVersion = project.ext.gradleWrapperVersion }
+
